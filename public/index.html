@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rede Social</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+  <script src="js/config.js"></script>
+</head>
+
+<body>
+  <header class="container-fluid d-flex justify-content-center p-0 header-logo">
+    <img src="images/chama-as-mina-header.png" class="img">
+  </header>
+
+
+  <main class="container-fluid col-md-6">
+    <section>
+      <article class="d-flex justify-content-center mt-4 style-font-title">Acesse sua conta</article>
+      <section class="form-signin d-flex justify-content-center">
+        <form class="form-wrap">
+          <div class="form-group">
+            <input type="email" class="form-control mt-2" id="signInEmail" aria-describedby="emailHelp"
+              placeholder="E-mail">
+            <input type="password" class="form-control mt-4" id="signInPassword" placeholder="Senha">
+            <div class="btn-signin">
+              <button type="submit" class="btn btn-block mt-4 btn-style" id="signInButton">Login</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <figure class="social-network">
+        <a href="#" class="icon-facebook social-circle" id="signInButtonFacebook" title="Facebook"><i
+            class="fa fa-facebook"></i></a>
+        <a href="#" class="icon-google social-circle" id="signInButtonGoogle" title="Google +"><i
+            class="fa fa-google-plus"></i></a>
+      </figure>
+    </section>
+
+    <section>
+      <article class="d-flex justify-content-center style-font-title">Não tem uma conta?</article>
+      <div class="btn-signup d-flex justify-content-center">
+        <input class="btn mt-2 mb-4 btn-style" type="button" value="CRIAR CONTA" id="signUpButton">
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/login.js"></script>
+</body>
+
+</html>
